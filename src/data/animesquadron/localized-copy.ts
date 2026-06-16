@@ -472,6 +472,11 @@ const en: PageCopy = {
           'Use name rankings only after checking the role. A unit is worth building when it solves your current wave, boss, farm, or support problem.',
       },
       {
+        question: 'Should I chase a single Anime Squadron unit name first?',
+        answer:
+          'Only chase a named unit after it fits your route. If players are talking about Vegeta, Gogeta, Infinite, or another meta name, compare its role, reroll cost, and current stage value before spending.',
+      },
+      {
         question: 'Why does this tier list rank roles?',
         answer:
           'Role rankings avoid inventing unit-name data while Anime Squadron is still in early access. They still tell you where to spend first.',

@@ -43,6 +43,22 @@ export const sources = {
     confidence: 'medium',
     note: 'Rechecked June 15, 2026. Used for active-code overlap, inactive-code checks, and launch-stage search demand.',
   },
+  pcgamesnCodes: {
+    type: 'guide_site',
+    label: 'PCGamesN Anime Squadron codes',
+    url: 'https://www.pcgamesn.com/anime-squadron/codes',
+    checkedAt: '2026-06-16',
+    confidence: 'medium',
+    note: 'Checked June 16, 2026. Used to cross-check the newest 40kCCU and 5kInterested code additions.',
+  },
+  pocketTacticsCodes: {
+    type: 'guide_site',
+    label: 'Pocket Tactics Anime Squadron codes',
+    url: 'https://www.pockettactics.com/anime-squadron-codes',
+    checkedAt: '2026-06-16',
+    confidence: 'medium',
+    note: 'Checked June 16, 2026. Used as a secondary current-code source.',
+  },
   rolimonsGroup: {
     type: 'community',
     label: 'Komplex Studio Roblox group cross-check',

@@ -1,12 +1,33 @@
 import { sources } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-06-15';
+export const CODE_CHECKED_AT = '2026-06-16';
 
 const threeSourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}`;
 const inactiveConflictLabel = `${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}; ${sources.beebomCodes.label} still lists it`;
+const newestSourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.pcgamesnCodes.label}, ${sources.pocketTacticsCodes.label}`;
 
 export const codes: GameCode[] = [
+  {
+    code: '40kCCU!',
+    reward: '40 Trait Rerolls, 3,500 Gems, 30 Stat Cubes, and 20 Zeni',
+    status: 'active',
+    firstSeen: '2026-06-15',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: newestSourceLabel,
+    notes:
+      'Newest CCU milestone code found across current June 16 source checks. Some sources mention a level 10 requirement.',
+  },
+  {
+    code: '5kInterested!',
+    reward: '2,000 Gems, 2,000 Gold, and 20 Trait Rerolls',
+    status: 'active',
+    firstSeen: '2026-06-15',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: newestSourceLabel,
+    notes:
+      'New interest milestone code cross-checked across Beebom, Destructoid, Pro Game Guides, PCGamesN, and Pocket Tactics.',
+  },
   {
     code: 'Tysm30KCCU!',
     reward: '2,000 Gems, 5,000 Gold, 50 Trait Shards, and 30 Reroll Cubes',
@@ -191,11 +212,14 @@ export const codeCheckSummary = {
     sources.beebomCodes,
     sources.destructoidCodes,
     sources.proGameGuidesCodes,
+    sources.pcgamesnCodes,
+    sources.pocketTacticsCodes,
   ],
   reviewNotes: [
     'Anime Squadron codes are case-sensitive; copy them exactly, including punctuation.',
-    'Redeem the six currently cross-checked release codes before older milestone codes.',
-    'Older launch codes were moved out of the active table because two current sources list them inactive.',
+    'Redeem 40kCCU and 5kInterested first because they are the newest cross-checked additions.',
+    'Tysm10kCCU remains expired here because Pro Game Guides and Destructoid list it inactive, even though some trackers still show it active.',
+    'Older launch codes stay out of the active table unless at least two current sources agree they still work.',
     'Use codes before rerolling traits or stats so the free shards, cubes, gems, and gold shape your first real spend.',
     'If a code fails, rejoin a fresh server and retry before assuming it is expired.',
   ],
