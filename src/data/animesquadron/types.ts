@@ -51,6 +51,19 @@ export interface UnitRoleRanking {
   sourceConfidence: Confidence;
 }
 
+export interface UnitNameWatch {
+  slug: string;
+  name: string;
+  aliases: string[];
+  consensus: string;
+  roleFit: UnitRole[];
+  priority: PriorityTier;
+  decision: string;
+  evidence: string;
+  sourceLabels: string[];
+  sourceConfidence: Confidence;
+}
+
 export interface TraitPlan {
   slug: string;
   title: string;

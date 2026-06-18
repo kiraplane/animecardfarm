@@ -1,12 +1,19 @@
 import { AdsterraAdFrame } from '@/components/ads/adsterra-ad';
 import { FaqSection } from '@/components/animesquadron/faq-section';
+import {
+  ConfidenceBadge,
+  TierBadge,
+} from '@/components/animesquadron/status-badge';
 import { TierListTable } from '@/components/animesquadron/tier-list-table';
 import Container from '@/components/layout/container';
 import { JsonLd } from '@/components/seo/json-ld';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { getAnimeSquadronCopy } from '@/data/animesquadron/localized-copy';
-import { unitRoleRankings } from '@/data/animesquadron/tier-list';
+import {
+  unitNameWatchlist,
+  unitRoleRankings,
+} from '@/data/animesquadron/tier-list';
 import { LocaleLink } from '@/i18n/navigation';
 import { constructMetadata } from '@/lib/metadata';
 import type { Metadata } from 'next';
@@ -125,6 +132,60 @@ export default async function TierListPage({
         </section>
 
         <TierListTable labels={copy.tierList.tierLabels} />
+
+        <section className="space-y-4">
+          <div className="max-w-3xl space-y-3">
+            <h2 className="font-display text-3xl font-bold">
+              {copy.tierList.unitWatchHeading}
+            </h2>
+            <p className="text-sm leading-7 text-[#D5C6B7]">
+              {copy.tierList.unitWatchIntro}
+            </p>
+          </div>
+          <div className="grid gap-4 lg:grid-cols-2">
+            {unitNameWatchlist.map((entry) => (
+              <article
+                key={entry.slug}
+                className="rounded-lg border border-[#3A2A24] bg-[#130D0B] p-5"
+              >
+                <div className="flex flex-wrap items-center gap-2">
+                  <TierBadge tier={entry.priority} />
+                  <ConfidenceBadge confidence={entry.sourceConfidence} />
+                </div>
+                <h3 className="mt-4 font-display text-2xl font-bold text-[#FFF5EA]">
+                  {entry.name}
+                </h3>
+                <p className="mt-2 text-xs uppercase tracking-wide text-[#F3B23A]">
+                  {copy.tierList.aliasesLabel}: {entry.aliases.join(', ')}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {entry.roleFit.map((role) => (
+                    <Badge
+                      key={role}
+                      variant="outline"
+                      className="border-[#574033] text-[#FFF5EA]"
+                    >
+                      {copy.tierList.roleFitLabel}: {role}
+                    </Badge>
+                  ))}
+                </div>
+                <p className="mt-4 text-sm leading-7 text-[#D5C6B7]">
+                  <strong className="text-[#FFF5EA]">
+                    {copy.tierList.consensusLabel}:
+                  </strong>{' '}
+                  {entry.consensus}. {entry.decision}
+                </p>
+                <p className="mt-3 text-sm leading-7 text-[#D5C6B7]">
+                  {entry.evidence}
+                </p>
+                <p className="mt-4 text-xs leading-6 text-[#9F8C7B]">
+                  {copy.tierList.sourceLabel}: {entry.sourceLabels.join(', ')}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <AdsterraAdFrame slot="banner-300x250" label />
 
         <FaqSection items={copy.tierList.faqs} />

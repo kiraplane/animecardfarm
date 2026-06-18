@@ -138,6 +138,12 @@ type TierListCopy = {
   bestUnitsButton: string;
   secretUnitsButton: string;
   codesButton: string;
+  unitWatchHeading: string;
+  unitWatchIntro: string;
+  consensusLabel: string;
+  aliasesLabel: string;
+  roleFitLabel: string;
+  sourceLabel: string;
   tierLabels: {
     rolesSuffix: string;
     tableIntro: string;
@@ -456,6 +462,13 @@ const en: PageCopy = {
     bestUnitsButton: 'Read best units guide',
     secretUnitsButton: 'Secret units guide',
     codesButton: 'Redeem codes first',
+    unitWatchHeading: 'Named-unit validation watchlist',
+    unitWatchIntro:
+      'These are the unit names currently supported by multiple competitor tier-list checks. Use them as spending leads, then compare the role to your account before rerolling.',
+    consensusLabel: 'Consensus',
+    aliasesLabel: 'Search aliases',
+    roleFitLabel: 'Role fit',
+    sourceLabel: 'Source check',
     tierLabels: {
       rolesSuffix: 'roles',
       tableIntro:
