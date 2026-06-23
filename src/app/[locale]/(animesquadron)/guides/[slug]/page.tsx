@@ -28,6 +28,7 @@ const relatedRouteLabels: Record<string, string> = {
   '/guides/gacha-bag-reroll-cubes-guide': 'Gacha Bag',
   '/guides/gear-crafting-guide': 'Gear Crafting',
   '/guides/how-to-get-gogeta-gometa': 'Gogeta / Gometa',
+  '/guides/infinite-mode-farming-guide': 'Infinite Mode',
   '/guides/secret-units-guide': 'Secret Units',
   '/guides/trait-shards-reroll-cubes-farm': 'Trait Shards Farm',
   '/guides/update-0-5-tier-list': 'UPD 0.5 Tier List',

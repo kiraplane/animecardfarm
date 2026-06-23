@@ -41,6 +41,14 @@ const retiredPublicRouteRedirects: Array<{
     pattern: /^\/guides\/gear-crafting-recipes\/?$/,
     target: '/guides/gear-crafting-guide',
   },
+  {
+    pattern: /^\/(?:anime-squadron-)?infinite(?:-mode)?\/?$/,
+    target: '/guides/infinite-mode-farming-guide',
+  },
+  {
+    pattern: /^\/guides\/infinite-mode\/?$/,
+    target: '/guides/infinite-mode-farming-guide',
+  },
   { pattern: /^\/discord-server\/?$/, target: '/discord' },
   { pattern: /^\/anime-squadron-discord\/?$/, target: '/discord' },
 ];

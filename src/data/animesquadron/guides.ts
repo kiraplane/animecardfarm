@@ -869,6 +869,104 @@ export const guides: Guide[] = [
     ],
   },
   {
+    slug: 'infinite-mode-farming-guide',
+    title: 'Anime Squadron Infinite Mode Farming Guide',
+    seoTitle: 'Anime Squadron Infinite Mode Guide - Rewards and Farming',
+    seoDescription:
+      'Use the Anime Squadron Infinite Mode guide to plan reward farming, wave pushing, Madora-style endless clears, Gogeta/Gometa prerequisites, Gacha Bags, and reroll spending.',
+    summary:
+      'Infinite Mode is where resource loops and long evolution routes start to matter. Enter it after Story is stable, farm with a clear target, and stop spending when the mode stops improving your next wall.',
+    category: 'Game Modes',
+    difficulty: 'Intermediate',
+    coverImageUrl: cover,
+    publishedAt: '2026-06-23',
+    updatedAt: '2026-06-23',
+    sourceStrategy: 'guide_site_crosscheck',
+    sourceNotes:
+      'Built from current Infinite Mode search results, a new Infinite Mode YouTube guide, Sportskeeda route notes that mention Infinite requirements, and competitor reward-farming coverage. Exact reward pools should be checked in game.',
+    videoSearchQueries: [
+      'Anime Squadron Infinite Mode guide',
+      'Anime Squadron Infinite Mode rewards',
+      'Anime Squadron Madora Infinite Mode',
+      'Anime Squadron Gogeta Infinite Mode',
+    ],
+    tags: ['Infinite Mode', 'Rewards', 'Farming'],
+    relatedRoutes: [
+      '/game-modes',
+      '/guides/gacha-bag-reroll-cubes-guide',
+      '/guides/update-0-5-tier-list',
+      '/guides/how-to-get-gogeta-gometa',
+      '/guides/trait-shards-reroll-cubes-farm',
+      '/guides/gems-gold-spending-guide',
+      '/tier-list',
+    ],
+    body: [
+      {
+        heading: 'When to start Infinite Mode',
+        paragraphs: [
+          'Do not use Infinite Mode as an account rescue button. Start it when Story waves are stable enough that your main carry, support, and economy choices can repeat clears without burning every reroll material you own.',
+          'The reason is simple: Infinite is valuable because it repeats. If each attempt feels like a desperate push, the account probably still needs Story upgrades, a cleaner carry, or better support timing before the mode becomes efficient.',
+        ],
+      },
+      {
+        heading: 'Farm with one reward target',
+        paragraphs: [
+          'Infinite Mode naturally connects resource farming, Gacha Bag style reward checks, and long evolution routes. That makes it tempting to farm endlessly, but the better habit is to name one target before entering.',
+          'A target can be Reroll Cubes for a keeper unit, Gems for summons, Gold for upgrades, Trait Rerolls for a carry, or a prerequisite step for Gometa/Gogeta. If the run does not fund one of those targets, stop and re-check the mode choice.',
+        ],
+        bullets: [
+          'Use active codes first so you know the real missing resource.',
+          'Farm Infinite only after the squad can clear repeat waves cleanly.',
+          'Spend rewards in small batches, then test the same wall again.',
+          'Do not reroll a unit just because Infinite gave you materials.',
+        ],
+      },
+      {
+        heading: 'Best unit profiles for repeat waves',
+        paragraphs: [
+          'Infinite Mode rewards units that keep working as waves stretch longer. The safest profiles are steady wave clear, scaling damage, economy support, and enough control to keep enemies inside damage windows.',
+          'Madora-style Burn and scaling behavior is a useful profile clue, but it is not a one-unit rule. The mode wants units that improve as the fight continues or keep pressure controlled long enough for your carry to work.',
+        ],
+      },
+      {
+        heading: 'How Infinite ties into Gogeta and 0.5 meta',
+        paragraphs: [
+          'Gogeta search usually maps to Gometa route planning, and current route notes point to Infinite Mode progress as one of the long-path requirements alongside Raid and evolution materials. If Gometa is the account goal, Infinite should become a scheduled farming route, not a random side activity.',
+          'UPD 0.5 also makes Infinite useful as a unit test. Berserker, Falcon, Madora, Gometa, and other high-interest names should be judged by what they solve. If a unit improves wave length, reward stability, or farm tempo, it has a real Infinite role.',
+        ],
+      },
+      {
+        heading: 'Stop rules for Infinite farming',
+        paragraphs: [
+          'Stop when the next upgrade is funded, when the same failure repeats, or when your reward spend no longer changes the result. Repeating the mode without a stop rule can hide the real issue: your squad shape may be wrong, not underfarmed.',
+          'After each batch, test the exact wall again. If the run improves, keep the route. If the wall stays the same, compare units, traits, gear, and support timing before putting more resources into the same loop.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What is Infinite Mode for in Anime Squadron?',
+        answer:
+          'Use Infinite Mode for repeat wave farming, reward checks, long evolution preparation, and testing whether your squad can hold longer pressure.',
+      },
+      {
+        question: 'Should beginners farm Infinite Mode first?',
+        answer:
+          'Usually no. Beginners should stabilize Story, claim codes, and build one carry before treating Infinite as a farming route.',
+      },
+      {
+        question: 'Does Infinite Mode matter for Gogeta or Gometa?',
+        answer:
+          'Current route coverage points to Infinite Mode progress as part of long Gometa/Gogeta preparation, so it is worth planning once the account is stable.',
+      },
+      {
+        question: 'Which units are good for Infinite Mode?',
+        answer:
+          'Prioritize steady wave clear, scaling damage, economy support, and control. Madora-style scaling and high-end carry routes are useful leads, but the best pick depends on your account.',
+      },
+    ],
+  },
+  {
     slug: 'secret-units-guide',
     title: 'Anime Squadron Secret Units Guide',
     seoTitle: 'Anime Squadron Secret Units Guide - SSJ4 Gogeta, Shanron, Meta',

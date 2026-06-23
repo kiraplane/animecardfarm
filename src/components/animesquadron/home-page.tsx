@@ -94,6 +94,10 @@ const guideKeywordLinks = [
     href: '/guides/game-modes-rewards-guide',
   },
   {
+    keyword: 'Anime Squadron Infinite Mode',
+    href: '/guides/infinite-mode-farming-guide',
+  },
+  {
     keyword: 'Anime Squadron Discord Trello Wiki',
     href: '/guides/discord-trello-wiki-guide',
   },

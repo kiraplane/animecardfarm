@@ -16,6 +16,20 @@ export const gameModes: GameMode[] = [
     sourceConfidence: 'high',
   },
   {
+    slug: 'infinite-mode',
+    name: 'Infinite Mode',
+    priority: 'Recommended',
+    bestFor: ['Resource loops', 'Wave tests', 'Evolution prerequisites'],
+    firstGoal:
+      'Use Infinite after Story is stable enough to farm repeat waves without draining rerolls or rare materials.',
+    notes: [
+      'Infinite Mode is most useful when it supports reward farming and premium evolution checks.',
+      'Madora-style scaling and Gometa/Gogeta preparation both benefit from a repeatable endless-wave plan.',
+      'Verify exact reward pools in the live UI before counting on a specific drop.',
+    ],
+    sourceConfidence: 'medium',
+  },
+  {
     slug: 'boss-challenges',
     name: 'Boss challenges',
     priority: 'Situational',
