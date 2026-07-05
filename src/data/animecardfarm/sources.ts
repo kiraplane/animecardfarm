@@ -1,6 +1,6 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-06-27';
+export const CHECKED_AT = '2026-07-05';
 export const OFFICIAL_CHECKED_AT = '2026-07-02';
 
 export const officialGameFacts = {
@@ -55,7 +55,7 @@ export const officialSources: DataSource[] = [
     url: 'https://beebom.com/anime-card-farm-codes/',
     checkedAt: CHECKED_AT,
     confidence: 'medium',
-    note: 'Current code source with redemption steps and rewards; one trait-code spelling differs from several other sources.',
+    note: 'Rechecked July 5, 2026. Current code source still lists BRUTALCOMEBACK!, TRAITS!, and POTIONS with redemption steps and rewards; one trait-code spelling differs from several other sources.',
   },
   {
     type: 'codes_site',
@@ -63,7 +63,7 @@ export const officialSources: DataSource[] = [
     url: 'https://robloxden.com/game-codes/anime-card-farm',
     checkedAt: CHECKED_AT,
     confidence: 'medium',
-    note: 'Cross-check for active codes, rewards, and case-sensitive entry.',
+    note: 'Rechecked July 5, 2026 as a cross-check for active codes, rewards, and case-sensitive entry.',
   },
   {
     type: 'codes_site',
@@ -71,7 +71,7 @@ export const officialSources: DataSource[] = [
     url: 'https://rocodes.gg/codes/anime-card-farm',
     checkedAt: CHECKED_AT,
     confidence: 'medium',
-    note: 'Cross-check for active code count and reward categories.',
+    note: 'Rechecked July 5, 2026 as a cross-check for active code count and reward categories.',
   },
   {
     type: 'serper',
