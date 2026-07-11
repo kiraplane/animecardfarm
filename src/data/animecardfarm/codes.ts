@@ -1,19 +1,20 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-07-10';
+export const CODE_CHECKED_AT = '2026-07-11';
 
 export const activeCodes: GameCode[] = [
   {
     code: 'BRUTALCOMEBACK!',
-    reward: '100 Trait Gems and five Luck II Potions',
+    reward:
+      '3 Time Potions, 3 Cash Potions, 3 Luck Potions, 200 Trait Gems, and 200 Gems',
     status: 'active',
     firstSeen: '2026-07-02',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Pocket Tactics, Roblox Den, GameRant, Deltia',
-    confidence: 'medium',
+    sourceLabel: 'Beebom, Pro Game Guides, Destructoid, Roblox Den',
+    confidence: 'high',
     notes:
-      'Newest July source-checked code. Copy the exclamation mark; reward wording should follow the in-game popup if code trackers disagree.',
+      'Newest July source-checked code. Reward text corrected on July 11 after Beebom, Pro Game Guides, Destructoid, and Roblox Den aligned on the larger potion, Trait Gem, and Gem package.',
   },
   {
     code: 'POTIONS',
@@ -83,6 +84,14 @@ export const codeCheckSummary = {
     {
       label: 'Pocket Tactics',
       url: 'https://www.pockettactics.com/anime-card-farm-codes',
+    },
+    {
+      label: 'Pro Game Guides',
+      url: 'https://progameguides.com/roblox/roblox-anime-card-farm-codes/',
+    },
+    {
+      label: 'Destructoid',
+      url: 'https://www.destructoid.com/anime-card-farm-roblox-codes/',
     },
   ],
 };
