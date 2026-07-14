@@ -37,6 +37,26 @@ export const topicPages: Record<string, TopicPage> = {
           'Use codes and potions to support a pack session, then return to the income loop. Rewards are a boost, not a replacement for upgrade discipline.',
         ],
       },
+      {
+        heading: 'Record the pack pool before spending',
+        paragraphs: [
+          'A useful pack entry needs its price, unlock requirement, visible card pool, rarity or mutation signals, and the income level needed to recover the purchase. Check the current pack panel because update tiers can move faster than third-party lists.',
+          'When two packs are available, compare how many pulls from each can replace a current earner. The more expensive pack is not automatically better if one bad pull empties the upgrade budget.',
+        ],
+        bullets: [
+          'Unlock requirement and pack price',
+          'Visible card or rarity pool',
+          'Best current card that the pack can replace',
+          'Upgrade money left after one pull',
+          'Offline-income time needed to recover the cost',
+        ],
+      },
+      {
+        heading: 'Use offline income as the recovery test',
+        paragraphs: [
+          'Before logging out, equip and upgrade the cards that produce the strongest reliable income. On return, compare the offline payout with the next pack price. If one normal offline window nearly funds another pull, the tier is sustainable; if not, improve the current cards first.',
+        ],
+      },
     ],
     faq: [
       {
@@ -125,6 +145,25 @@ export const topicPages: Record<string, TopicPage> = {
         heading: 'Trait gems need source confidence',
         paragraphs: [
           `Current code sources list ${activeCodes.length} reported active Anime Card Farm codes, including rewards tied to potions and trait gems. Spend those resources after you know which card is worth keeping, not the moment the reward appears.`,
+        ],
+      },
+      {
+        heading: 'Mutation and trait are separate decisions',
+        paragraphs: [
+          'A mutation is a card state or boost discovered through the card/pack loop, while a trait is a reroll or enhancement decision that consumes its own resource. Check both fields separately instead of assuming a mutated card automatically has the best trait.',
+          'The correct keeper has three things at once: strong current income, enough remaining upgrade headroom, and low replacement risk from the next pack tier.',
+        ],
+      },
+      {
+        heading: 'Mutation investment checklist',
+        paragraphs: [
+          'Before using trait gems or expensive upgrades, record the base card, mutation label, current income, next upgrade cost, next pack target, and how quickly offline earnings repay the spend.',
+        ],
+        bullets: [
+          'Keep: improves the active income setup immediately.',
+          'Test: strong boost, but a new pack tier is close.',
+          'Hold resources: mutation is rare but the base card is already outdated.',
+          'Replace: another card earns more with a cheaper upgrade path.',
         ],
       },
     ],
