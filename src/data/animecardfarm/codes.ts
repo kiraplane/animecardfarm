@@ -1,9 +1,20 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-07-20';
+export const CODE_CHECKED_AT = '2026-07-21';
 
 export const activeCodes: GameCode[] = [
+  {
+    code: 'PRODUCTION!',
+    reward: '3 Production Potions',
+    status: 'active',
+    firstSeen: '2026-07-21',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Pro Game Guides, MrGuider, NerdsChalk',
+    confidence: 'high',
+    notes:
+      'Newest code found in three current trackers. Copy the exclamation mark and save the Production Potions for a planned card-farming session.',
+  },
   {
     code: 'BRUTALCOMEBACK!',
     reward:
@@ -92,6 +103,14 @@ export const codeCheckSummary = {
     {
       label: 'Destructoid',
       url: 'https://www.destructoid.com/anime-card-farm-roblox-codes/',
+    },
+    {
+      label: 'MrGuider',
+      url: 'https://www.mrguider.org/roblox/anime-card-farm-codes/',
+    },
+    {
+      label: 'NerdsChalk',
+      url: 'https://nerdschalk.com/anime-card-farm-codes/',
     },
   ],
 };
