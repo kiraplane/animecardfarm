@@ -1,9 +1,64 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-07-24';
+export const CODE_CHECKED_AT = '2026-07-29';
 
 export const activeCodes: GameCode[] = [
+  {
+    code: 'COMMUNITY1',
+    reward: 'Potions and instant rolls',
+    status: 'active',
+    firstSeen: '2026-07-27',
+    lastChecked: '2026-07-29',
+    sourceLabel: 'PCGamesN',
+    confidence: 'medium',
+    notes:
+      'Short-window community code reported active through July 29. Redeem before the deadline and use the live popup for the exact potion mix.',
+  },
+  {
+    code: 'COMMUNITY2',
+    reward: 'Potions and instant rolls',
+    status: 'active',
+    firstSeen: '2026-07-27',
+    lastChecked: '2026-07-29',
+    sourceLabel: 'PCGamesN',
+    confidence: 'medium',
+    notes:
+      'Short-window community code reported active through July 29. Copy the number exactly.',
+  },
+  {
+    code: 'COMMUNITY3',
+    reward: 'Potions and instant rolls',
+    status: 'active',
+    firstSeen: '2026-07-27',
+    lastChecked: '2026-07-29',
+    sourceLabel: 'PCGamesN',
+    confidence: 'medium',
+    notes:
+      'Short-window community code reported active through July 29. Redeem before starting a planned card-farming session.',
+  },
+  {
+    code: 'COMMUNITY4',
+    reward: 'Potions and instant rolls',
+    status: 'active',
+    firstSeen: '2026-07-27',
+    lastChecked: '2026-07-29',
+    sourceLabel: 'PCGamesN',
+    confidence: 'medium',
+    notes:
+      'Short-window community code reported active through July 29. The live reward popup is final.',
+  },
+  {
+    code: 'COMMUNITY5',
+    reward: 'Potions and instant rolls',
+    status: 'active',
+    firstSeen: '2026-07-27',
+    lastChecked: '2026-07-29',
+    sourceLabel: 'PCGamesN',
+    confidence: 'medium',
+    notes:
+      'Short-window community code reported active through July 29. Redeem with the other COMMUNITY codes before they rotate.',
+  },
   {
     code: 'PRODUCTION!',
     reward: '3 Production Potions',
@@ -111,6 +166,10 @@ export const codeCheckSummary = {
     {
       label: 'NerdsChalk',
       url: 'https://nerdschalk.com/anime-card-farm-codes/',
+    },
+    {
+      label: 'PCGamesN',
+      url: 'https://www.pcgamesn.com/anime-card-farm/codes',
     },
   ],
 };
