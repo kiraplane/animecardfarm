@@ -1,64 +1,26 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-07-29';
+export const CODE_CHECKED_AT = '2026-07-31';
 
 export const activeCodes: GameCode[] = [
-  {
-    code: 'COMMUNITY1',
-    reward: 'Potions and instant rolls',
-    status: 'active',
-    firstSeen: '2026-07-27',
-    lastChecked: '2026-07-29',
-    sourceLabel: 'PCGamesN',
-    confidence: 'medium',
-    notes:
-      'Short-window community code reported active through July 29. Redeem before the deadline and use the live popup for the exact potion mix.',
-  },
-  {
-    code: 'COMMUNITY2',
-    reward: 'Potions and instant rolls',
-    status: 'active',
-    firstSeen: '2026-07-27',
-    lastChecked: '2026-07-29',
-    sourceLabel: 'PCGamesN',
-    confidence: 'medium',
-    notes:
-      'Short-window community code reported active through July 29. Copy the number exactly.',
-  },
-  {
-    code: 'COMMUNITY3',
-    reward: 'Potions and instant rolls',
-    status: 'active',
-    firstSeen: '2026-07-27',
-    lastChecked: '2026-07-29',
-    sourceLabel: 'PCGamesN',
-    confidence: 'medium',
-    notes:
-      'Short-window community code reported active through July 29. Redeem before starting a planned card-farming session.',
-  },
-  {
-    code: 'COMMUNITY4',
-    reward: 'Potions and instant rolls',
-    status: 'active',
-    firstSeen: '2026-07-27',
-    lastChecked: '2026-07-29',
-    sourceLabel: 'PCGamesN',
-    confidence: 'medium',
-    notes:
-      'Short-window community code reported active through July 29. The live reward popup is final.',
-  },
-  {
-    code: 'COMMUNITY5',
-    reward: 'Potions and instant rolls',
-    status: 'active',
-    firstSeen: '2026-07-27',
-    lastChecked: '2026-07-29',
-    sourceLabel: 'PCGamesN',
-    confidence: 'medium',
-    notes:
-      'Short-window community code reported active through July 29. Redeem with the other COMMUNITY codes before they rotate.',
-  },
+  ...Array.from(
+    { length: 10 },
+    (_, index): GameCode => ({
+      code: `GUILDS${index + 1}`,
+      reward:
+        index < 5
+          ? 'Potions, trait rerolls, and instant rolls'
+          : 'Instant rolls',
+      status: 'active',
+      firstSeen: '2026-07-26',
+      lastChecked: CODE_CHECKED_AT,
+      sourceLabel: 'All Things How',
+      confidence: 'medium',
+      notes:
+        'Listed in the current July 26 working table, although the same source contains a conflicting old expiry note. Redeem in order and trust the live result.',
+    })
+  ),
   {
     code: 'PRODUCTION!',
     reward: '3 Production Potions',
@@ -120,7 +82,21 @@ export const watchCodes: GameCode[] = [
   },
 ];
 
-export const expiredCodes: GameCode[] = [];
+export const expiredCodes: GameCode[] = [
+  ...['COMMUNITY1', 'COMMUNITY2', 'COMMUNITY3', 'COMMUNITY4', 'COMMUNITY5'].map(
+    (code): GameCode => ({
+      code,
+      reward: 'Potions and instant rolls',
+      status: 'expired',
+      firstSeen: '2026-07-27',
+      lastChecked: CODE_CHECKED_AT,
+      sourceLabel: 'PCGamesN',
+      confidence: 'medium',
+      notes:
+        'Moved out of the active table after the published July 29 limited redemption window ended.',
+    })
+  ),
+];
 
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
