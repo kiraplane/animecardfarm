@@ -1,26 +1,9 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-08-03';
+export const CODE_CHECKED_AT = '2026-08-04';
 
 export const activeCodes: GameCode[] = [
-  ...Array.from(
-    { length: 10 },
-    (_, index): GameCode => ({
-      code: `GUILDS${index + 1}`,
-      reward:
-        index < 5
-          ? 'Potions, trait rerolls, and instant rolls'
-          : 'Instant rolls',
-      status: 'active',
-      firstSeen: '2026-07-26',
-      lastChecked: CODE_CHECKED_AT,
-      sourceLabel: 'All Things How',
-      confidence: 'medium',
-      notes:
-        'Listed in the current July 26 working table, although the same source contains a conflicting old expiry note. Redeem in order and trust the live result.',
-    })
-  ),
   {
     code: 'PRODUCTION!',
     reward: '3 Production Potions',
@@ -83,6 +66,23 @@ export const watchCodes: GameCode[] = [
 ];
 
 export const expiredCodes: GameCode[] = [
+  ...Array.from(
+    { length: 10 },
+    (_, index): GameCode => ({
+      code: `GUILDS${index + 1}`,
+      reward:
+        index < 5
+          ? 'Potions, trait rerolls, and instant rolls'
+          : 'Instant rolls',
+      status: 'expired',
+      firstSeen: '2026-07-26',
+      lastChecked: CODE_CHECKED_AT,
+      sourceLabel: 'All Things How',
+      confidence: 'medium',
+      notes:
+        'Moved out of the active table after the source marked the GUILDS1-10 batch expired on July 20.',
+    })
+  ),
   ...['COMMUNITY1', 'COMMUNITY2', 'COMMUNITY3', 'COMMUNITY4', 'COMMUNITY5'].map(
     (code): GameCode => ({
       code,
